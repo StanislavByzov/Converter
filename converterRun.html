@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src = "converter.js"></script>
+</head>
+
+<body>
+  Conversion System <select id="system" onchange="updateUnits()">
+    <option value="" selected="selected"></option>
+	<option value="Mass">Mass</option>
+	<option value="Distance">Distance</option>
+	<option value="Temperature">Temperature</option>
+  </select>
+  <br>
+  Value <input id="value" onchange="updateValue()">
+  <br>
+  Convert From <select id="from" onchange="setUnit('from')">  </select>
+  <br>
+  Convert To <select id="to" onchange="setUnit('to')">  </select>
+  </select>
+  <br>
+  <button onclick="convert()" id="convert" disabled>Click</button>
+</body>
+
+</html>
