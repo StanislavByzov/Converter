@@ -60,9 +60,7 @@ function updateUnits() {
 	unitToSelect = document.getElementById("to");
 
 	let optionsFactory = new SingletonOptionsFactory();
-	// console.log(optionsFactory);
-	let factory = optionsFactory.create();
-	// console.log(factory);	
+	let factory = optionsFactory.create();	
 	factory.populateOptionsArray(unitFromSelect);
 	factory.populateOptionsArray(unitToSelect);
 }
